@@ -226,9 +226,18 @@ footer .tab{
   margin: 0 auto;
   text-align: center;
   border-radius: 2px;
-  border: 1px solid rgb(96,103,121);
 }
-.button{
+.button-left{
+  width: 49%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  font-family: cursive;
+  color: rgb(244,243,241);
+  font-size: 15px;
+  background-color:rgb(96,103,121) ;
+}
+.button-right{
   width: 49%;
   height: 100%;
   z-index: 2;
@@ -237,9 +246,6 @@ footer .tab{
   color: rgb(79,79,79);
   font-size: 15px;
   background-color:rgb(244,243,241) ;
-}
-.button:hover{
-  background: rgb(96,103,121) ;
 }
 footer .content{
   width: 70%;

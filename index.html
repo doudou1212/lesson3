@@ -133,8 +133,8 @@
 </div>
 <footer>
 	<div class="tab">
-		<button class="button" type="button" value="Testimonials">Testimonials</button>
-		<button class="button" type="button" value="Recent Feedbacks">Recent Feedbacks</button>
+		<button name="button" class="button-left" onclick="click()" type="button" value="Testimonials">Testimonials</button>
+		<button name="button" class="button-right" onclick="click()" type="button" value="Recent Feedbacks">Recent Feedbacks</button>
 	</div>
 	<div class="content">
 		<p> Like glitter's raining on me You like a shot of pure gold I think I'm bout to explode  Like glitter's raining on me You like a shot of pure gold I think I'm bout to explode</p>
@@ -160,5 +160,15 @@
 		</div>
 	</div>
 </footer>
+<script type="text/javascript">
+	function click(){
+		console.log("sdfsfs");
+		var button = document.getElementsByName('button');
+		if(button.style.backgroundColor=='#606779'){
+			button.style.backgroundColor='#F4F3F1';
+			button.style.color='#606779';
+		}
+	}
+</script>
 </body>
 </html>
