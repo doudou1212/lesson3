@@ -69,18 +69,20 @@ div .one,div .two,div .three {
   top:20%;
 }
 .search-font-big{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   font-family: cursive;
   color: white;
   font-size: 20px;
+    text-align: center;
 }
 .search-font-small{
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   font-family: cursive;
   color: white;
   font-size: 12px;
+    text-align: center;
 }
 .search-form{
   width: 100%;
