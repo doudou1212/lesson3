@@ -10,8 +10,32 @@
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
 </head>
 <body>
+<script language="JavaScript">
+	function myClickL(){
+		var bl= document.getElementById('button-left');
+		var br=document.getElementById('button-right');
+		br.style.backgroundColor="rgb(244,243,241)";
+		br.style.color="rgb(96,103,121)";
+		bl.style.backgroundColor="rgb(96,103,121)";
+		bl.style.color="rgb(244,243,241)";
+	}
+	function myClickR(){
+		var bl= document.getElementById('button-left');
+		var br=document.getElementById('button-right');
+		bl.style.backgroundColor="rgb(244,243,241)";
+		bl.style.color="rgb(96,103,121)";
+		br.style.backgroundColor="rgb(96,103,121)";
+		br.style.color="rgb(244,243,241)";
+	}
+
+</script>
 <header>
 	<p class="logo">LOGO</p>
+	<div class="sign">
+		<button class="agents">Agents</button>
+		<button class="login">Login</button>
+		<button class="signup">Sign Up</button>
+	</div>
 		<div class="search">
 			<P class="search-font-big">Relax, Finding An Agent Just Got Easier</P>
 			<p class="search-font-small">Receive propsais from best agents for free</p>
@@ -42,6 +66,8 @@
 	</div>
 	<div class="works">
 		<p>HOW IT WORKS</p>
+		<div class="inner-line-l"></div>
+		<div class="inner-line-r"></div>
 		<div class="works-inner">
 		<div class="circle">1
 		</div>
@@ -78,7 +104,7 @@
 	</div>
 	<div class="choose">
 		<div class="title">
-			<p class="bold" >WHY CHOOSE US</p>
+			<p class="bold-center" >WHY CHOOSE US</p>
 		</div>
 		<div class="inner-left">
 			<div class="pic">
@@ -133,8 +159,8 @@
 </div>
 <footer>
 	<div class="tab">
-		<button name="button" class="button-left" onclick="click()" type="button" value="Testimonials">Testimonials</button>
-		<button name="button" class="button-right" onclick="click()" type="button" value="Recent Feedbacks">Recent Feedbacks</button>
+		<button id="button-left" class="button-left" onclick="myClickL()" type="button" value="Testimonials">Testimonials</button>
+		<button id="button-right" class="button-right"  onclick="myClickR()" type="button" value="Recent Feedbacks">Recent Feedbacks</button>
 	</div>
 	<div class="content">
 		<p> Like glitter's raining on me You like a shot of pure gold I think I'm bout to explode  Like glitter's raining on me You like a shot of pure gold I think I'm bout to explode</p>
@@ -152,23 +178,32 @@
 	</div>
 	<div class="footer-pic">
 
-		<div class="search">
-			<form class="search-form">
+		<div class="footer-search">
+			<div class="search-text">
+			<p >Find An Agent</p>
+			</div>
+			<div class="footer-search-item">
+			<form class="footer-search-form">
 				<input class="search-input" type="text" value="Enter Suburb">
 				<input class="search-button" type="button" value="SEARCH">
 			</form>
+			</div>>
 		</div>
 	</div>
+	<div class="contact">
+		<div class="contact-button">
+			<button class="blog" >Blog</button>
+			<button class="contactUs">Contact Us</button>
+			<button class="about">About Us</button>
+			<button class="faq">FAQs</button>
+			<button class="pri">Privacy</button>
+			<button class="dis">Disclaimer</button>
+		</div>
+		<div class="contact-pic">
+
+		</div>
+
+	</div>
 </footer>
-<script type="text/javascript">
-	function click(){
-		console.log("sdfsfs");
-		var button = document.getElementsByName('button');
-		if(button.style.backgroundColor=='#606779'){
-			button.style.backgroundColor='#F4F3F1';
-			button.style.color='#606779';
-		}
-	}
-</script>
 </body>
 </html>
